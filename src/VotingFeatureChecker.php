@@ -29,7 +29,7 @@ class VotingFeatureChecker implements FeatureCheckerInterface
         }
 
         if ($isEnabled === null) {
-            throw new InvalidValueException(sprintf('Unknown feature flag: "%s"', $featureFlag));
+            throw new InvalidValueException(\sprintf('Unknown feature flag: "%s"', $featureFlag));
         }
 
         return $isEnabled;

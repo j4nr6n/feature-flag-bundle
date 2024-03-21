@@ -20,8 +20,8 @@ class InMemoryFeatureChecker implements FeatureCheckerInterface
     /** @throws InvalidValueException if the feature is unknown */
     public function isEnabled(string $featureFlag, array $context = []): bool
     {
-        if (!array_key_exists($featureFlag, $this->features)) {
-            throw new InvalidValueException(sprintf('Unknown feature flag: "%s"', $featureFlag));
+        if (!\array_key_exists($featureFlag, $this->features)) {
+            throw new InvalidValueException(\sprintf('Unknown feature flag: "%s"', $featureFlag));
         }
 
         return $this->features[$featureFlag];

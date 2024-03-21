@@ -6,17 +6,17 @@
     "keywords": [],
     "homepage": "https://github.com/j4nr6n/feature-flag-bundle",
     "require": {
-        "php": ">=8.2",
-        "symfony/http-kernel": "^6.2",
-        "symfony/dependency-injection": "^6.2",
-        "symfony/config": "^6.2"
+        "php": ">=8.3",
+        "symfony/http-kernel": "^7.0",
+        "symfony/dependency-injection": "^7.0",
+        "symfony/config": "^7.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "squizlabs/php_codesniffer": "^3.7",
-        "vimeo/psalm": "^5.4",
+        "squizlabs/php_codesniffer": "^3.9.0",
+        "vimeo/psalm": "^5.22.2",
         "phpunit/phpunit": "^9.5",
-        "twig/twig": "^3.6"
+        "twig/twig": "^v3.8.0"
     },
     "autoload": {
         "psr-4": {
