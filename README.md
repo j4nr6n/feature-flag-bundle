@@ -99,6 +99,15 @@ class SomeService
 }
 ```
 
+### In Twig
+
+```twig
+{% include feature_is_enabled('fancy_widget')
+    ? '_fancy_widget.html.twig'
+    : '_plain_widget.html.twig'
+%}
+```
+
 ## Feature Checkers
 
 If feature voters aren't working out, you can also create your own feature "checker".

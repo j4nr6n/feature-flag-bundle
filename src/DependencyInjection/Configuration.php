@@ -12,8 +12,6 @@ final class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder('j4nr6n_feature_flag');
 
         /**
-         * @noinspection NullPointerExceptionInspection
-         *
          * @psalm-suppress UndefinedMethod
          * @psalm-suppress MixedMethodCall
          */
