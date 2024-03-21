@@ -88,7 +88,8 @@ class SomeService
 {
     public function __construct(
         private readonly FeatureCheckerInterface $featureChecker
-    ) {}
+    ) {
+    }
     
     public function someMethod() {
         return $this->featureChecker->isEnabled('new_feature')
