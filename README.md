@@ -69,7 +69,7 @@ class DefaultController extends AbstractController
     #[Route(name: 'app_default_homepage', methods: [Request::METHOD_GET])]
     public function homepage(FeatureCheckerInterface $featureChecker): Response
     {
-        return $featureChecker->isEnabled('new_homepage')
+        return $featureChecker->isEnabled('new_homepage', ['user' => $this->getUser()])
             ? $this->render('default/new_homepage.html.twig')
             : $this->render('default/homepage.html.twig');
     }
