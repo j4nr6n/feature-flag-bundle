@@ -5,12 +5,11 @@ namespace j4nr6n\FeatureFlagBundle\DependencyInjection;
 use j4nr6n\FeatureFlagBundle\FeatureCheckerInterface;
 use j4nr6n\FeatureFlagBundle\FeatureVoterInterface;
 use j4nr6n\FeatureFlagBundle\InMemoryFeatureChecker;
-use j4nr6n\FeatureFlagBundle\Twig\FeatureFlagRuntime;
 use j4nr6n\FeatureFlagBundle\VotingFeatureChecker;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
+use Symfony\Component\DependencyInjection\Extension\Extension;
 
 final class FeatureFlagExtension extends Extension
 {
